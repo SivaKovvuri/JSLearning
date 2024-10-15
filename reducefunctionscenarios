@@ -1,0 +1,9 @@
+//calculate the average of the below Numbers
+let a1=[1,2,3,4,5,6,7,8,9,10]
+let result =  a1.reduce((acc,val,i,{length:len})=>{
+    console.log('length',len)
+    return i == len -1 ? (acc+val)/len : acc+val;
+})
+
+console.log(result)
+
